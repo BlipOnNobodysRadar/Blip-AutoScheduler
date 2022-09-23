@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const TasksSchema = new mongoose.Schema({
-  label: {
+  title: {
     type: String,
     required: true,
   },
@@ -19,6 +19,10 @@ const TasksSchema = new mongoose.Schema({
   },
   priority: {
     type: Number,
+  },
+  deadline: {
+    type: Date,
+    default: Date.now,
   },
 });
 
