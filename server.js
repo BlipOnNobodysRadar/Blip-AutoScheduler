@@ -1,3 +1,10 @@
+//TODO
+// Edit metadata to match product
+// NEXT STEP Add task Model: Must do, Should do, Could do, Deadline, date added
+// Psuedocode priorities on task selection based on category and proximity to deadline
+// Figure out how the fuck to make a daily schedule
+//
+
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
@@ -60,6 +67,6 @@ app.use("/post", postRoutes);
 app.use("/comment", commentRoutes);
 
 //Server Running
-app.listen(process.env.PORT, () => {
+app.listen(8080, () => {
   console.log("Server is running, you better catch it!");
 });
