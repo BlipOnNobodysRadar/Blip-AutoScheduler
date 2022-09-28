@@ -8,21 +8,17 @@
               <a href="/logout" class="col-3 btn btn-primary">Logout</a>
           </div>
           <div class="mt-5">
-            <h2>Add a post</h2>
+            <h2>Create a new Schedule</h2>
             <form action="/post/createPost" enctype="multipart/form-data" method="POST">
               <div class="mb-3">
-                  <label for="title" class="form-label">Title</label>
-                  <input type="text" class="form-control" id="title" name="title">
+                  <label for="schedule-name" class="form-label">Schedule Name (must be unique)</label>
+                  <input type="text" class="form-control" id="schedule-name" name="schedule-name">
               </div>
               <div class="mb-3">
-                <label for="caption" class="form-label">Caption</label>
-                <textarea class="form-control" id="caption" name="caption"></textarea>
+                <label for="labels" class="form-label">Task labels (comma separated)</label>
+                <textarea class="form-control" id="labels" name="labels"></textarea>
               </div>
-              <div class="mb-3">
-                <label for="imgUpload" class="form-label">Image</label>
-                <input type="file" class="form-control" id="imageUpload" name="file">
-              </div>
-              <button type="submit" class="btn btn-primary" value="Upload">Submit</button>
+              <button type="submit" class="btn btn-primary" value="Upload">Create Schedule</button>
             </form>
           </div>
       </div>

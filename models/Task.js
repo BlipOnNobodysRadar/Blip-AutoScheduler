@@ -11,7 +11,7 @@ const TasksSchema = new mongoose.Schema({
   },
   category: {
     type: String,
-    required: true,
+    default: "Moderate",
   },
   createdAt: {
     type: Date,
