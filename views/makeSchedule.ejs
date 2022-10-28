@@ -1,0 +1,28 @@
+<%- include('partials/header') -%>
+<div class="container">
+  <div class="row mt-5">
+      <div class="col-6">
+          <div class="mt-5">
+            <h2>Create a new Schedule</h2>
+            <form action="/post/createPost" enctype="multipart/form-data" method="POST">
+              <div class="mb-3">
+                  <label for="schedule-name" class="form-label">Schedule Name (must be unique)</label>
+                  <input type="text" class="form-control" id="schedule-name" name="schedule-name">
+              </div>
+              <div class="mb-3">
+                <label for="labels" class="form-label">Task labels (comma separated)</label>
+                <textarea class="form-control" id="labels" name="labels"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" value="Upload">Create Schedule</button>
+            </form>
+          </div>
+      </div>
+      <div class="col-6">
+        <div class="row justify-content-center mt-5">
+          <a class="btn btn-primary" href="/feed">Return to Feed</a>
+        </div>  
+      </div>  
+    </div>
+  </div>
+</div>
+<%- include('partials/footer') -%>
