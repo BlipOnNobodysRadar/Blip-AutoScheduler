@@ -2,7 +2,7 @@
 // Edit metadata to match product
 // NEXT STEP Add task Model: Must do, Should do, Could do, Deadline, date added
 // Psuedocode priorities on task selection based on category and proximity to deadline
-//
+// Update styling to something more unique and pleasant
 
 const express = require("express");
 const app = express();
